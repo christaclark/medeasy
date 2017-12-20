@@ -1,0 +1,239 @@
+@import fonts, colors
+
+*
+	outline: none !important
+
+html
+	height: 100%
+
+body
+	font-family: "Roboto", sans-serif
+	color: $dark
+
+img
+	max-width: 100%
+	height: auto
+
+a
+	color: inherit
+	text-decoration: none !important
+	transition: .5s
+	&:hover
+		color: $green
+
+.fz-52
+	font-size: 52px
+	letter-spacing: -2.3px
+	line-height: 1.1
+.fz-32
+	font-size: 2rem
+.fz-28
+	font-size: 28px
+.fz-26
+	font-size: 26px
+.fz-24
+	font-size: 1.5rem
+.fz-22
+	font-size: 22px
+.fz-20
+	font-size: 20px
+.fz-18
+	font-size: 18px
+.fz-14
+	font-size: 14px
+
+.bold
+	font-weight: 700
+.black
+	font-weight: 900
+
+.white
+	color: white
+.dark
+	color: $dark
+.green
+	color: $green
+.gray
+	color: $gray
+.blue
+	color: $blue
+.gray-light
+	color: $gray-light
+	.disabled
+		opacity: 0.5
+
+.bg-white
+	background-color: white
+.bg-blue
+	background-color: $bg-blue
+	.disabled
+		opacity: 0.5
+
+.uppercase
+	text-transform: uppercase
+
+.btn
+	padding: 17px 40px
+	border-radius: 5px
+	cursor: pointer
+.btn-success
+	background-color: $green
+	border-color: $green
+.btn-outline-secondary
+	color: $blue
+	border-color: #e1e8ee
+
+.navbar
+	position: static
+	transition: .5s
+	top: -100px
+	&.fixed-top
+		position: fixed
+		top: 0
+.navbar-toggler
+	padding: 0
+	border: 0
+
+.section-1
+	min-height: 100vh
+	background-image: url("../img/hero.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	.play-wrap
+		color: #d0d4d7
+		.play-button
+			span 
+				vertical-align: middle
+			&:hover 
+				opacity: 0.6
+
+.section-2
+	padding-top: 123px
+	padding-bottom: 92px
+
+.section-3
+	padding-top: 66px
+	background-color: #f7f7f9
+	overflow: hidden
+	.owl-carousel
+		img 
+			width: auto
+
+.owl-carousel
+	.owl-nav 
+		margin-top: 0
+		[class*=owl-]
+			position: absolute
+			padding: 0
+			margin: 0
+			top: 42%
+			margin-top: -26px
+			background-color: transparent !important
+			color: $gray-light !important
+			transition: .5s
+			.fa 
+				font-size: 52px
+			&.owl-prev
+				left: -35px
+			&.owl-next
+				right: -35px
+			&:not(.disabled):hover
+				opacity: 0.8
+	.owl-dots 
+		.owl-dot 
+			vertical-align: middle
+			span
+				width: 6px
+				height: 6px
+				margin: 3px 5px
+				background-color: #e0e3e7
+				transition: .2s
+			&.active, &:hover
+				span
+					width: 10px
+					height: 10px
+					margin: 0 3px
+					background-color: $blue
+
+.section-4
+	padding-top: 118px
+	padding-bottom: 169px
+
+.section-5
+	padding-top: 128px
+	margin-bottom: -128px
+	background-color: #f9f9f9
+	.pricing-wrap
+		border-radius: 5px
+		overflow: hidden
+		.pricing
+			padding: 30px
+			hr 
+				border-color: #e1e8ee
+			ul
+				list-style-type: none
+				padding-left: 2rem
+				padding-top: 14px
+				margin-bottom: 2rem
+				li 
+					position: relative
+					margin-bottom: 30px
+					&:not(.disabled)
+						&:before, &:after
+							content: ''
+							position: absolute
+							display: inline-block
+							left: -2rem
+							height: 2px
+							background-color: $green
+							border-radius: 3px
+						&:before
+							top: 10px
+							width: 8px
+							transform: rotate(45deg)
+						&:after
+							top: 8px
+							width: 15px
+							transform: rotate(-45deg)
+							margin-left: 4px
+			.btn 
+				border-width: 2px
+				font-size: 18px
+				padding-top: 15.5px
+				padding-bottom: 15.5px
+				border-radius: 7px
+
+.section-6
+	padding-top: 257px
+	padding-bottom: 97px
+	background-color: #5e6977
+	.menu
+		color: #7a838e
+
+footer
+	padding-top: 53px
+	padding-bottom: 88px
+	background-color: #545e6b
+	p 
+		margin-bottom: 10px
+	.dropdown-toggle
+		img 
+			vertical-align: bottom
+			margin-right: 7px
+		&:after 
+			margin-left: 12px
+	.dropdown-menu
+		background-color: transparent
+		border: 0
+		color: inherit
+		.dropdown-item
+			padding-left: 2rem
+			color: inherit
+			background-color: transparent
+			&:hover
+				color: $green
+
+.footer-color
+	color: $footer
+
+@import media
